@@ -273,4 +273,5 @@ def preprocess_and_predict_rain(forecast_df, model):
 forecast_df_predicted = preprocess_and_predict_rain(forecast_df, dl_model)
 forecast_df_predicted
 
-
+# %%
+forecast_df_predicted.to_csv('forecasted_weather.csv', index=False)
